@@ -1,0 +1,3 @@
+name: Verify & Sign MSF Assets
+on: [push]
+jobs: { build: { runs-on: ubuntu-latest, steps: [{name: Test, run: echo OK}]}}
