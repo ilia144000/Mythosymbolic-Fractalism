@@ -1,3 +1,3 @@
-# Examples folder
+# Metadata folder
 
-Put artworks and sample outputs here.
+Contains signature, example JSON, and output hashes.
