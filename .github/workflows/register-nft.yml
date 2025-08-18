@@ -1,0 +1,58 @@
+name: Register NFT in registry.json
+
+on:
+  workflow_dispatch:
+    inputs:
+      token_id:
+        description: "Token ID"
+        required: true
+      token_uri:
+        description: "Token URI (ipfs://...)"
+        required: true
+      media_uri:
+        description: "Media/Image URI (ipfs://...)"
+        required: true
+      minted_at:
+        description: "Minted at (ISO-8601, e.g. 2025-08-18T05:46:00Z)"
+        required: true
+      tx:
+        description: "Transaction hash (0x...)"
+        required: true
+      contract:
+        description: "Contract address"
+        required: true
+      network:
+        description: "Network name"
+        required: true
+        default: "polygon"
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Append entry to registry.json
+        run: |
+          node scripts/register-nft.js \
+            --token-id "${{ inputs.token_id }}" \
+            --token-uri "${{ inputs.token_uri }}" \
+            --media-uri "${{ inputs.media_uri }}" \
+            --tx "${{ inputs.tx }}" \
+            --minted-at "${{ inputs.minted_at }}" \
+            --network "${{ inputs.network }}" \
+            --contract "${{ inputs.contract }}"
+      
+      - name: Commit changes
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add registry.json
+          git commit -m "chore(registry): add token ${{ inputs.token_id }} on ${{ inputs.network }}"
+          git push
