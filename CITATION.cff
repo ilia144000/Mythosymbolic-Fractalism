@@ -8,7 +8,6 @@ abstract: >
 authors:
   - family-names: "ilia"
     given-names: "144000"
-    orcid: "https://orcid.org/0000-0000-0000-0000"   # Replace with your real ORCID, or remove
 
 keywords:
   - Mythosymbolic Fractalism
@@ -25,30 +24,25 @@ repository-code: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
 repository-artifact: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases"
 url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
 
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2025-08-18"
 
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.XXXXXXX"      # Fill this in after Zenodo assigns the DOI
-  - type: url
-    value: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases/tag/v1.0.0"
+# Identifiers will be updated once DOI is minted in Zenodo
+identifiers: []
 
 preferred-citation:
   type: software
-  title: "Mythosymbolic Fractalism (MSF) — Specification & Integrity Pack (v1.0.0)"
+  title: "Mythosymbolic Fractalism (MSF) — Specification & Integrity Pack (v1.0.1)"
   authors:
     - family-names: "ilia"
       given-names: "144000"
-      orcid: "https://orcid.org/0000-0000-0000-0000"
   year: 2025
   month: 8
-  version: "1.0.0"
-  doi: "10.5281/zenodo.XXXXXXX"          # Update after Zenodo DOI is assigned
+  version: "1.0.1"
   url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
-  notes: "Please cite the DOI if available; otherwise cite the GitHub release URL."
+  notes: "Please cite the DOI once minted in Zenodo; otherwise cite the GitHub release URL."
 
 message: >
   Please cite as: ilia144000 (RANNTA), Mythosymbolic Fractalism (MSF) —
-  Specification & Assets, v1.0.0 (2025). If a DOI is available via Zenodo,
+  Specification & Assets, v1.0.1 (2025). If a DOI is available via Zenodo,
   prefer citing the DOI.
