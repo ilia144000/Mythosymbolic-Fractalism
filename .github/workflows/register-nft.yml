@@ -3,13 +3,28 @@ name: Register NFT in registry.json
 on:
   workflow_dispatch:
     inputs:
-      token_id:   { description: "Token ID", required: true }
-      token_uri:  { description: "Token URI (ipfs://...)", required: true }
-      media_uri:  { description: "Media/Image URI (ipfs://...)", required: true }
-      minted_at:  { description: "Minted at (ISO-8601, e.g. 2025-08-18T05:46:00Z)", required: true }
-      tx:         { description: "Transaction hash (0x...)", required: true }
-      contract:   { description: "Contract address", required: true }
-      network:    { description: "Network name", required: true, default: "polygon" }
+      token_id:
+        description: "Token ID"
+        required: true
+      token_uri:
+        description: "Token URI (ipfs://...)"
+        required: true
+      media_uri:
+        description: "Media/Image URI (ipfs://...)"
+        required: true
+      minted_at:
+        description: "Minted at (ISO-8601, e.g. 2025-08-18T05:46:00Z)"
+        required: true
+      tx:
+        description: "Transaction hash (0x...)"
+        required: true
+      contract:
+        description: "Contract address"
+        required: true
+      network:
+        description: "Network name"
+        required: true
+        default: "polygon"
 
 permissions:
   contents: write
@@ -29,14 +44,24 @@ jobs:
           if [ ! -f registry.json ]; then
             echo "[]" > registry.json
           fi
-          cat registry.json | node -e "JSON.parse(require('fs').readFileSync(0,'utf8'))"
+          node -e "JSON.parse(require('fs').readFileSync('registry.json','utf8'))"
 
-      - name: Setup Node
+      - name: Validate inputs
+        run: |
+          echo "Validating inputs..."
+          [[ "${{ inputs.token_uri }}" =~ ^ipfs://(Qm|bafy)[A-Za-z0-9]+(/.*)?$ ]] || { echo "❌ Bad token_uri: ${{ inputs.token_uri }}"; exit 1; }
+          [[ "${{ inputs.media_uri }}" =~ ^ipfs://(Qm|bafy)[A-Za-z0-9]+$ ]] || { echo "❌ Bad media_uri: ${{ inputs.media_uri }}"; exit 1; }
+          date -d "${{ inputs.minted_at }}" >/dev/null 2>&1 || { echo "❌ Bad minted_at: ${{ inputs.minted_at }}"; exit 1; }
+          [[ "${{ inputs.contract }}" =~ ^0x[a-fA-F0-9]{40}$ ]] || { echo "❌ Bad contract address: ${{ inputs.contract }}"; exit 1; }
+          [[ "${{ inputs.tx }}" =~ ^0x[a-fA-F0-9]{64}$ ]] || { echo "❌ Bad tx hash: ${{ inputs.tx }}"; exit 1; }
+          echo "✅ Validation passed!"
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Append entry
+      - name: Append entry to registry.json
         run: |
           node scripts/register-nft.js \
             --token-id "${{ inputs.token_id }}" \
