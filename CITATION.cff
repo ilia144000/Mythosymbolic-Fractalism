@@ -1,48 +1,50 @@
 cff-version: 1.2.0
-title: "Mythosymbolic Fractalism (MSF) — Specification & Assets"
+title: Mythosymbolic Fractalism (MSF) — Spec & Assets
 abstract: >
   Formal specification, metadata templates, and integrity workflows (C2PA, SHA-256)
-  for Mythosymbolic Fractalism (MSF) by ilia144000 (RANNTA). English-only metadata
-  for reproducibility and citation.
+  for Mythosymbolic Fractalism (MSF) by ilia144000 — RANNTA. English-only metadata.
 
 authors:
-  - family-names: "ilia"
+  - family-names: ilia
     given-names: "144000"
+    orcid: "https://orcid.org/0000-0000-0000-0000"   # replace if you have real ORCID
 
 keywords:
   - Mythosymbolic Fractalism
   - MSF
-  - Sacred Geometry
-  - Golden Ratio
-  - Generative Art
+  - sacred geometry
+  - golden ratio
+  - generative art
   - NFT
   - C2PA
   - RANNTA
 
-license: "MIT"
-repository-code: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
+license: MIT
 repository-artifact: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases"
+repository-code: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
 url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
 
-version: "1.0.1"
-date-released: "2025-08-18"
+version: 1.0.01
+release-date: 2025-08-18
 
-# Identifiers will be updated once DOI is minted in Zenodo
-identifiers: []
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.16892058"
+  - type: url
+    value: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases/tag/v1.0.01"
 
 preferred-citation:
-  type: software
-  title: "Mythosymbolic Fractalism (MSF) — Specification & Integrity Pack (v1.0.1)"
+  type: dataset
+  title: Mythosymbolic Fractalism (MSF) — Spec & Integrity Pack (v1.0.01)
   authors:
-    - family-names: "ilia"
+    - family-names: ilia
       given-names: "144000"
+      orcid: "https://orcid.org/0000-0000-0000-0000"
   year: 2025
-  month: 8
-  version: "1.0.1"
+  doi: "10.5281/zenodo.16892058"
   url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
-  notes: "Please cite the DOI once minted in Zenodo; otherwise cite the GitHub release URL."
+  notes: "Please cite the DOI if available; otherwise cite the GitHub release URL."
 
 message: >
-  Please cite as: ilia144000 (RANNTA), Mythosymbolic Fractalism (MSF) —
-  Specification & Assets, v1.0.1 (2025). If a DOI is available via Zenodo,
-  prefer citing the DOI.
+  Please cite as: ilia144000 (RANNTA), Mythosymbolic Fractalism (MSF) — Spec & Assets,
+  v1.0.01 (2025). DOI: 10.5281/zenodo.16892058
