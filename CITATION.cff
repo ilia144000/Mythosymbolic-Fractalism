@@ -1,9 +1,53 @@
 cff-version: 1.2.0
 title: Mythosymbolic Fractalism (MSF) — Spec & Assets
+abstract: >
+  Formal specification, metadata templates, and integrity workflows (C2PA, SHA-256)
+  for Mythosymbolic Fractalism (MSF) by ilia144000 — RANNTA. English-only metadata.
+
 authors:
   - family-names: ilia
     given-names: "144000"
+    orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- replace with your real ORCID or remove
+
+keywords:
+  - Mythosymbolic Fractalism
+  - MSF
+  - sacred geometry
+  - golden ratio
+  - generative art
+  - NFT
+  - C2PA
+  - RANNTA
+
+license: MIT
+repository-artifact: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases"
+repository-code: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
+url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
+
 version: 1.0.0
 release-date: 2025-08-18
-url: https://github.com/ilia144000/Mythosymbolic-Fractalism
-message: "Please cite as: ilia144000, RANNTA — Mythosymbolic Fractalism (MSF), v1.0.0."
+
+identifiers:
+  # Fill after minting on Zenodo (or other DOI issuer)
+  - type: doi
+    value: 10.5281/zenodo.XXXXXXX        # <-- replace with real DOI
+  # Optional: add a second identifier for the exact release tag URL
+  - type: url
+    value: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases/tag/v1.0.0"
+
+preferred-citation:
+  type: dataset
+  title: Mythosymbolic Fractalism (MSF) — Spec & Integrity Pack (v1.0.0)
+  authors:
+    - family-names: ilia
+      given-names: "144000"
+      orcid: "https://orcid.org/0000-0000-0000-0000"  # same ORCID
+  year: 2025
+  doi: 10.5281/zenodo.XXXXXXX                          # <-- update when ready
+  url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
+  notes: "Please cite the DOI if available; otherwise cite the GitHub release URL."
+
+message: >
+  Please cite as: ilia144000 (RANNTA), Mythosymbolic Fractalism (MSF) — Spec & Assets,
+  v1.0.0 (2025). If a DOI is available via Zenodo, prefer citing the DOI.
+
