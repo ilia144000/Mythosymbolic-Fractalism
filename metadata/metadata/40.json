@@ -1,0 +1,31 @@
+{
+  "name": "Mythosymbolic Fractalism (MSF) — Genesis NFT",
+  "symbol": "MSF",
+  "description": "The genesis NFT of Mythosymbolic Fractalism (MSF) — a visionary art form merging sacred geometry, mythological symbolism, fractal logic, and subconscious narratives. This NFT encodes a metaphysical seed sprouting from Earth, surrounded by zodiacal and DNA motifs, representing the cyclical rebirth of cosmic consciousness.",
+  "image": "ipfs://bafybeiclc7tr7f3m2vd6obpcdav4qtcefu66inbsqqxgsfugymwwwbmj24",
+  "external_url": "https://www.rannta.com",
+  "attributes": [
+    { "trait_type": "Style", "value": "Mythosymbolic Fractalism" },
+    { "trait_type": "Geometry", "value": "Golden Spiral + Rooted Symmetry" },
+    { "trait_type": "Symbolism", "value": "Zodiac + DNA + Seed of Rebirth" },
+    { "trait_type": "Rarity", "value": "Genesis" },
+    { "trait_type": "Color Palette", "value": "Earthen Gold + BioGreen" },
+    { "trait_type": "Medium", "value": "Digital Oil Texture" },
+    { "trait_type": "Theme", "value": "Subconscious + Environmental Myth" }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "ipfs://bafybeiclc7tr7f3m2vd6obpcdav4qtcefu66inbsqqxgsfugymwwwbmj24",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "0x11B7f746ebc012054d8406618C579578c6071A89",
+        "share": 100
+      }
+    ]
+  }
+}
