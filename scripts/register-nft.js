@@ -1,13 +1,5 @@
 // Simple registry appender for MSF NFTs
-// Usage (local):
-//   node scripts/register-nft.js \
-//     --token-id 40 \
-//     --token-uri ipfs://... \
-//     --media-uri ipfs://... \
-//     --tx 0x... \
-//     --minted-at 2025-08-18T05:46:00Z \
-//     --network polygon \
-//     --contract 0x...
+// Usage via GitHub Actions inputs or local CLI.
 
 const fs = require("fs");
 const path = require("path");
@@ -25,24 +17,23 @@ function fail(msg) {
   process.exit(1);
 }
 
-const tokenId = getArg("--token-id");
+const tokenId  = getArg("--token-id");
 const tokenUri = getArg("--token-uri");
 const mediaUri = getArg("--media-uri");
-const txHash  = getArg("--tx");
+const txHash   = getArg("--tx");
 const mintedAt = getArg("--minted-at");
-const network = getArg("--network", "polygon");
+const network  = getArg("--network", "polygon");
 const contract = getArg("--contract");
 
-if (!tokenId) fail("Missing --token-id");
+if (!tokenId)  fail("Missing --token-id");
 if (!tokenUri) fail("Missing --token-uri");
 if (!mediaUri) fail("Missing --media-uri");
-if (!txHash)  fail("Missing --tx");
+if (!txHash)   fail("Missing --tx");
 if (!mintedAt) fail("Missing --minted-at (ISO-8601)");
 if (!contract) fail("Missing --contract");
 
 const REGISTRY_PATH = path.join(process.cwd(), "registry.json");
 
-// Load or init registry
 let registry = [];
 if (fs.existsSync(REGISTRY_PATH)) {
   try {
@@ -53,15 +44,12 @@ if (fs.existsSync(REGISTRY_PATH)) {
   }
 }
 
-// Prevent duplicates (same contract + token_id)
 const exists = registry.find(
-  r => (String(r.contract_address).toLowerCase() === String(contract).toLowerCase())
+  r => (String(r.contract_address || r.contract).toLowerCase() === String(contract).toLowerCase())
     && String(r.token_id) === String(tokenId)
 );
-
 if (exists) fail(`Entry already exists for contract ${contract} token_id ${tokenId}`);
 
-// Build record
 const record = {
   token_id: isNaN(Number(tokenId)) ? tokenId : Number(tokenId),
   token_uri: tokenUri,
@@ -72,7 +60,6 @@ const record = {
   contract_address: contract
 };
 
-// Append & save (pretty)
 registry.push(record);
 fs.writeFileSync(REGISTRY_PATH, JSON.stringify(registry, null, 2) + "\n", "utf8");
 console.log("✅ Appended to registry.json:", record);
