@@ -1,0 +1,43 @@
+{
+  "name": "MSF — Genesis Seed (1/1)",
+  "symbol": "MSF",
+  "description": "The genesis NFT of Mythosymbolic Fractalism (MSF) — a visionary work merging sacred geometry, mythic zodiac, fractal logic and subconscious narrative. A metaphysical seed rises from Earth along a Fibonacci flow, encircled by zodiac and DNA, signaling cyclical rebirth of cosmic consciousness.",
+  "image": "ipfs://bafybeiclc7tr7f3m2vd6obpcdav4qtcefu66inbsqqxgsfugymwwwbmj24",
+  "external_url": "https://www.rannta.com",
+  "animation_url": null,
+  "attributes": [
+    { "trait_type": "Style", "value": "Mythosymbolic Fractalism" },
+    { "trait_type": "Geometry", "value": "Golden Spiral · Rooted Symmetry" },
+    { "trait_type": "Symbolism", "value": "Zodiac · DNA · Seed of Rebirth" },
+    { "trait_type": "Rarity", "value": "Genesis" },
+    { "trait_type": "Palette", "value": "Earthen Gold · BioGreen" },
+    { "trait_type": "Medium", "value": "Digital Oil Texture" },
+    { "trait_type": "Theme", "value": "Subconscious · Environmental Myth" }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "ipfs://bafybeiclc7tr7f3m2vd6obpcdav4qtcefu66inbsqqxgsfugymwwwbmj24",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "0x11B7f746ebc012054d8406618C579578c6071A89",
+        "share": 100
+      }
+    ]
+  },
+  "content_hash_sha256": "2998a0677ca1154a499c36031f80cae459ceca34a2b0e20f3b70e272aa28c077",
+  "compiler": "MSFCore v1.0",
+  "creator_signature": {
+    "name": "ilia144000",
+    "style": "MSF",
+    "symbol": "RANNTA",
+    "wallets": [
+      "0x11B7f746ebc012054d8406618C579578c6071A89"
+    ],
+    "hash_tag": "#MSFbyILIA144000"
+  }
+}
