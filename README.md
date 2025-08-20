@@ -1,43 +1,28 @@
-# Mythosymbolic Fractalism (MSF)
-
-[![DOI](https://zenodo.org/badge/1039760195.svg)](https://doi.org/10.5281/zenodo.16892058)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
-## Overview
-
-**Mythosymbolic Fractalism (MSF)** is a visionary art and research framework that merges:
-
-- Sacred geometry  
-- Mythological symbolism  
-- Fractal logic  
-- Subconscious narratives  
-
-This repository provides the **formal specification, metadata templates, and integrity workflows** (C2PA, SHA-256) for MSF assets.
+## 🌐 Links
+- 🔗 [Official Website](https://rannta.com)  
+- 📘 [GitHub Documentation](https://github.com/ilia144000/Mythosymbolic-Fractalism)  
+- 📚 [Zenodo DOI](https://doi.org/10.5281/zenodo.16892059)  
 
 ---
 
-## Contents
+## 🕊️ RANNTA Origins
+**RANNTA Origins** is the first NFT collection introducing **Mythosymbolic Fractalism (MSF)**.  
 
-- `metadata/` → NFT metadata (JSON) and creator signature blocks  
-- `scripts/` → Integrity & embedding utilities (hash + sign)  
-- `examples/` → Sample NFT metadata following MSF spec  
-- `CITATION.cff` → Citation metadata (Zenodo DOI integrated)  
-- `LICENSE`, `ART_LICENSE`, `CODE_LICENSE` → Licensing details  
+Each piece embodies encrypted layers of meaning, merging:  
+✨ Human-centered creativity  
+✨ Sacred geometry  
+✨ Mythic archetypes  
+✨ Symbolic fractal structures  
+
+The collection represents a **fusion of myth, spirit, and technology** — rare digital artworks designed to inspire reflection and dialogue.  
+
+💚 A significant portion of the proceeds supports:  
+- Children’s welfare  
+- Environmental restoration  
+- Peace promotion worldwide  
 
 ---
-
-## How to Use
-
-1. Use metadata templates in `/metadata` to register new MSF NFTs.  
-2. Run integrity scripts in `/scripts` to embed signatures and hashes.  
-3. Register assets automatically via **GitHub Actions** workflows.  
-4. Browse official releases with DOI at Zenodo.  
-
----
-
-## Citation
-
-If you use this specification or related assets, please cite as:
 
