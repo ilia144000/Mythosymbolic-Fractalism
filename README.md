@@ -37,6 +37,10 @@ This repository provides the **formal specification**, **metadata templates**, a
 ## 📖 Citation
 If you use this specification or related assets, please cite as:  
 
+```
+ilia144000 (2025). Mythosymbolic Fractalism (MSF) — Specification & Assets.  
+Zenodo. https://doi.org/10.5281/zenodo.16892059
+```
 
 ---
 
@@ -64,4 +68,3 @@ The collection represents a **fusion of myth, spirit, and technology** — rare 
 - Peace promotion worldwide  
 
 ---
-

@@ -1,50 +1,15 @@
 cff-version: 1.2.0
-title: Mythosymbolic Fractalism (MSF) — Spec & Assets
-abstract: >
-  Formal specification, metadata templates, and integrity workflows (C2PA, SHA-256)
-  for Mythosymbolic Fractalism (MSF) by ilia144000 — RANNTA. English-only metadata.
-
+title: "RANNTA — Mythosymbolic Fractalism (MSF)"
+message: "If you use this specification or related assets, please cite as below."
 authors:
-  - family-names: ilia
-    given-names: "144000"
-    orcid: "https://orcid.org/0000-0000-0000-0000"   # replace if you have real ORCID
-
-keywords:
-  - Mythosymbolic Fractalism
-  - MSF
-  - sacred geometry
-  - golden ratio
-  - generative art
-  - NFT
-  - C2PA
-  - RANNTA
-
-license: MIT
-repository-artifact: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases"
+  - family-names: "ilia144000"
+    given-names: "RANNTA Project"
+abstract: >
+  Mythosymbolic Fractalism (MSF) is a visionary art and research framework merging
+  sacred geometry, mythological symbolism, fractal logic, and subconscious narratives.
 repository-code: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
-url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
-
-version: 1.0.01
-release-date: 2025-08-18
-
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.16892058"
-  - type: url
-    value: "https://github.com/ilia144000/Mythosymbolic-Fractalism/releases/tag/v1.0.01"
-
-preferred-citation:
-  type: dataset
-  title: Mythosymbolic Fractalism (MSF) — Spec & Integrity Pack (v1.0.01)
-  authors:
-    - family-names: ilia
-      given-names: "144000"
-      orcid: "https://orcid.org/0000-0000-0000-0000"
-  year: 2025
-  doi: "10.5281/zenodo.16892058"
-  url: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
-  notes: "Please cite the DOI if available; otherwise cite the GitHub release URL."
-
-message: >
-  Please cite as: ilia144000 (RANNTA), Mythosymbolic Fractalism (MSF) — Spec & Assets,
-  v1.0.01 (2025). DOI: 10.5281/zenodo.16892058
+license: "MIT"
+doi: "10.5281/zenodo.16892059"
+version: "1.0.0"
+date-released: "2025-08-20"
+url: "https://rannta.com"
