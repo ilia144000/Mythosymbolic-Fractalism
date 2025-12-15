@@ -1,15 +1,43 @@
 cff-version: 1.2.0
-title: "RANNTA — Mythosymbolic Fractalism (MSF)"
-message: "If you use this specification or related assets, please cite as below."
+
+title: "RANNTA Protocol — Mythosymbolic Fractalism (MSF)"
+
+message: >
+  If you use this protocol, specification, software, or related symbolic assets,
+  please cite this work as described below.
+
 authors:
-  - family-names: "ilia144000"
-    given-names: "RANNTA Project"
+  - family-names: Ghafari
+    given-names: Ilia
+    orcid: https://orcid.org/0009-0001-9044-4662
+    affiliation: RANNTA Protocol
+
 abstract: >
-  Mythosymbolic Fractalism (MSF) is a visionary art and research framework merging
-  sacred geometry, mythological symbolism, fractal logic, and subconscious narratives.
-repository-code: "https://github.com/ilia144000/Mythosymbolic-Fractalism"
-license: "MIT"
-doi: "10.5281/zenodo.16892059"
+  RANNTA Protocol is a signal-based economic, artistic, and computational framework
+  built on The Open Network (TON). It integrates Mythosymbolic Fractalism (MSF),
+  decentralized NFT infrastructure, symbolic computation, and collective intelligence
+  mechanisms to enable a living protocol-entity that preserves meaning, regenerates value,
+  and evolves human–AI co-existence.
+
+repository-code: https://github.com/ilia144000/rannta-developer-suite
+
+url: https://rannta.com
+
+license: MIT
+
+doi: 10.5281/zenodo.16892059
+
 version: "1.0.0"
+
 date-released: "2025-08-20"
-url: "https://rannta.com"
+
+keywords:
+  - RANNTA
+  - Mythosymbolic Fractalism
+  - MSF
+  - TON Blockchain
+  - NFT Infrastructure
+  - Symbolic Computation
+  - Protocol-Entity
+  - Crypto Art
+  - Collective Intelligence
