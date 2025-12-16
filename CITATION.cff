@@ -1,4 +1,5 @@
 cff-version: 1.2.0
+type: software
 title: "Mythosymbolic Fractalism (MSF)"
 message: "If you use this framework, specification, or related assets, please cite it as below."
 authors:
@@ -7,15 +8,15 @@ authors:
     orcid: https://orcid.org/0009-0001-9044-4662
 repository-code: https://github.com/ilia144000/Mythosymbolic-Fractalism
 url: https://rannta.com
-license: MIT
+license: "MIT"
 version: "1.0.0"
 date-released: "2025-08-20"
 doi: 10.5281/zenodo.16892059
 abstract: >
   Mythosymbolic Fractalism (MSF) is a transdisciplinary artistic and research framework
-  integrating mythological symbolism, sacred geometry, fractal logic, and subconscious
-  narrative structures. MSF serves as the conceptual and symbolic foundation for the
-  RANNTA Protocol and its on-chain cultural systems.
+  integrating mythological symbolism, sacred geometry, fractal logic, and narrative
+  structures. It is used as a conceptual and symbolic foundation for the RANNTA Protocol
+  and its on-chain cultural systems.
 keywords:
   - Mythosymbolic Fractalism
   - MSF
@@ -24,3 +25,15 @@ keywords:
   - Sacred Geometry
   - Cultural Protocol
   - RANNTA
+preferred-citation:
+  type: software
+  title: "Mythosymbolic Fractalism (MSF)"
+  authors:
+    - family-names: Ghafari
+      given-names: Ilia
+      orcid: https://orcid.org/0009-0001-9044-4662
+  doi: 10.5281/zenodo.16892059
+  url: https://github.com/ilia144000/Mythosymbolic-Fractalism
+  version: "1.0.0"
+  date-released: "2025-08-20"
+  license: "MIT"
